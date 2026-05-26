@@ -1700,7 +1700,6 @@
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(resizeCanvas, 150);
         });
-        resizeCanvas();
 
         class Particle {
             constructor() {
@@ -1760,6 +1759,7 @@
             }
             requestAnimationFrame(animateBg);
         }
+        resizeCanvas();
         animateBg();
 
 
